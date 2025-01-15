@@ -31,5 +31,12 @@ int main()
     std::cout << "The first item of the vector IDVec: " << IDVec.front() << std::endl;
     std::cout << "The second one of IDVec is: " << IDVec[1] << std::endl;
     
+    //remove
+    IDVec.erase(IDVec.begin());
+    std::cout << "The first item of the vector IDVec: " << IDVec.front() << std::endl;
+    
+    //try to see what else the vecctor type can do.
+    std::cout << "Capacity of vector: " << IDVec.capacity() << std::endl;
+    
     return 0;
 }
